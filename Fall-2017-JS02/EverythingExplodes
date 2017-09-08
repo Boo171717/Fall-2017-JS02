@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>CraftyJS Intro</title>
+    <script src="https://rawgithub.com/craftyjs/Crafty/release/dist/crafty-min.js"></script>
+  </head>
+  <body>
+    <script>
+
+      var square = Crafty.e("2D, Canvas, Color")
+        .attr({x:10,y:10, w:30, h:30})
+        .color("blue");
+square.bind("Blush", function() {
+    this.color("pink")
+});
+square.trigger("Blush");
+    </script>
+  </body>
+</html>

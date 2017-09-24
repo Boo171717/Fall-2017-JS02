@@ -1,10 +1,39 @@
+
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="project.css">
-  </head>
-  <body>
-    <div class="greeting"> Hello world!!! </div>
-    <script src="project.js">
-    </script>
-  </body>
+<body>
+         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <ins style="display:block; text-align:center;"
+  ></ins>
+<script>
+</script><h2>TextBox value : <label id="msg"></label></h2>
+
+<div style="padding:16px;">
+	TextBox : <input id='vish' type="textbox" value="Type something"></input>
+</div>
+
+<button id="Get">Get TextBox Value</button>
+
+<script type="text/javascript">
+    $('button').click(function () {
+      $('#msg').html($('input').val());
+      console.log("Hi");
+});
+
+</script>
+</body>
 </html>
+
+<!--for later- <table id="myTable">
+$(table#myTable).append(`html`)
+<table id=myTable>
+  <tr>
+    <th>name</th>
+    <th>food</th>
+    <th>color</th>
+  </tr>
+  <tr>
+    <td>${nameVar}</td>
+    <td>${foodvar}</td>
+    <td>${colorvar}</td>
+  </tr>
+</table>*/

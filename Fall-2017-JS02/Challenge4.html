@@ -1,65 +1,62 @@
 <html>
 <body>
-         <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <ins style="display:block; text-align:center;"
-  ></ins>
-<script>
-</script><h2>What is your name? <label class="msg"></label></h2>
-<div style="padding:16px;">
-	Name : <input class='name' type="textbox" value="Type Name"></input>
-</div>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <h2>What is your name? <label class="msg"></label></h2>
+  <div style="padding:16px;">
+    Name : <input class='name' type="textbox" value="Type Name"></input>
+  </div>
 
-<button class="Get">Get TextBox Value</button>
+  <button class="Get">Get TextBox Value</button>
 
-<script type="text/javascript">
-    $('button').click(function () {
-      $('.msg').html($('input.name').val());
+  <script type="text/javascript">
+  $('button').click(function () {
+    $('.msg').html($('input.name').val());
 
-      console.log("Hi");
+    console.log("Hi");
 
-});
-</script>
-<p><h2>What is your favorite food?  <label class="mss"></label></h2></p>
+  });
+  </script>
+  <p><h2>What is your favorite food?  <label class="mss"></label></h2></p>
 
-<div style="padding:16px;">
-	Food :<input class='food' type="textbox" value="Type Food"></input>
-</div>
+  <div style="padding:16px;">
+    Food :<input class='food' type="textbox" value="Type Food"></input>
+  </div>
 
-<button class="btn1">Get TextBox Value</button>
+  <button class="btn1">Get TextBox Value</button>
 
-<script type="text/javascript">
-    $(".btn1").click(function () {
-      $('.mss').html($('input.food').val());
-      console.log("Hi2");
+  <script type="text/javascript">
+  $(".btn1").click(function () {
+    $('.mss').html($('input.food').val());
+    console.log("Hi2");
 
-});
-</script>
-<p><h2>What is your favorite color?  <label class="msa"></label></h2></p>
+  });
+  </script>
+  <p><h2>What is your favorite color?  <label class="msa"></label></h2></p>
 
-<div style="padding:16px;">
-	Color: <input class='color' type="textbox" value="Type Color"></input>
-</div>
+  <div style="padding:16px;">
+    Color: <input class='color' type="textbox" value="Type Color"></input>
+  </div>
 
-<button class="btn2">Get TextBox Value</button>
+  <button class="btn2">Get TextBox Value</button>
 
-<script type="text/javascript">
-    $(".btn2").click(function () {
-      $('.msa').html($('input.color').val());
-      var name = $('input.name').val();
-      var food = $('input.food').val();
-      var color = $('input.color').val();
-      console.log("Hi3");
-      $("table").append(`<tr><td>${name}</td><td>${food}</td><td>${color}</td></tr>`)
-});
-</script>
-<table>
-  <tr>
-  <th>Name</th>
-   <th>Favorite Food</th>
-   <th>Favorite Color</th>
- </tr>
+  <script type="text/javascript">
+  $(".btn2").click(function () {
+    $('.msa').html($('input.color').val());
+    var name = $('input.name').val();
+    var food = $('input.food').val();
+    var color = $('input.color').val();
+    console.log("Hi3");
+    $("table").append(`<tr><td>${name}</td><td>${food}</td><td>${color}</td></tr>`)
+  });
+  </script>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Favorite Food</th>
+      <th>Favorite Color</th>
+    </tr>
 
- </table>
+  </table>
 
 </body>
 </html>
